@@ -99,3 +99,15 @@ x = y = z = 50;
 # What are the primitive data types
 |byte|ints from -128 - 127|
 |---|---| 
+|short||
+|---|---| 
+|int||
+|---|---| 
+|long||
+|---|---| 
+|||
+|---|---| 
+|||
+|---|---| 
+|||
+|---|---| 
