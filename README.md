@@ -113,3 +113,26 @@ x = y = z = 50;
 |---|---| 
 |char|Single ASCII value|
 |---|---| 
+
+# Difference between primative and non primative
+- Non-Primatives can be null
+- Primatives have to contain a value
+- Non-Primatives have methods to call
+
+# Var keyword
+Introduced in Java 10 (2018) it let's java decide the data type automatically.
+- It only works when you assign the value at the same time.
+- Nice for complex data types like ArrayList
+
+# Type casting
+- Big -> small = narrowing casting
+- small -> Big = widening casting
+
+# String 
+Reference: https://www.w3schools.com/java/java_ref_string.asp
+How to get string length = String.length()
+How to find a character:
+charAt(index)
+indexOf("something")
+string1.equals(string2)
+trim() removes from beginnging and end
