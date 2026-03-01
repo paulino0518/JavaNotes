@@ -98,17 +98,17 @@ x = y = z = 50;
 
 # What are the primitive data types
 |byte|ints from -128 - 127|
-|---|---| 
+||| 
 |short|ints from -32,768 - 32,767|
-|---|---| 
+||| 
 |int|ints from -2,147,483,648 - 2,147,483,647|
-|---|---| 
+||| 
 |long|ints from -9,223,372,036,854,775,808 - 9,223,372,036,854,775,807|
-|---|---| 
+||| 
 |float|Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits|
-|---|---| 
+||| 
 |double|Stores fractional numbers. Sufficient for storing 15 to 16 decimal digits|
-|---|---| 
+||| 
 |boolean|true or false|
 |---|---| 
 |char|Single ASCII value|
