@@ -145,25 +145,30 @@ The Scanner class provides two main categories of methods: next...() methods for
 
 1. Token-Based Reading (next...() methods) 
 These methods read the next available token and attempt to convert it to the specified data type. They stop reading when they encounter a delimiter. 
+- next(): Reads the next single word (string of characters up to the next whitespace delimiter).
+- nextInt(): Reads the next token and parses it as an int value. It can handle locale-specific digit groupings and different radices (number bases).
+- nextDouble(): Reads the next token and parses it as a double value.
+- nextBoolean(): Reads the next token and interprets it as a boolean value (true or false, case-insensitive).
 
-next(): Reads the next single word (string of characters up to the next whitespace delimiter).
-nextInt(): Reads the next token and parses it as an int value. It can handle locale-specific digit groupings and different radices (number bases).
-nextDouble(): Reads the next token and parses it as a double value.
-nextBoolean(): Reads the next token and interprets it as a boolean value (true or false, case-insensitive).
-Other data types: The Scanner class also includes methods for other primitive types like nextFloat(), nextByte(), nextShort(), and nextLong().
-next().charAt(0): While there is no dedicated nextChar() method, this common pattern uses the next() method to get the next token (a single word/character sequence) and then immediately takes the first character of that string using the charAt(0) method. 
+Other data types: The Scanner class also includes methods for other primitive types like 
+- nextFloat(),
+- nextByte(),
+- nextShort(), and
+- nextLong()
+
+next().charAt(0): 
+While there is no dedicated nextChar() method, this common pattern uses the next() method to get the next token (a single word/character sequence) and then immediately takes the first character of that string using the charAt(0) method. 
 
 2. Line-Based Reading
 nextLine(): This method is different from the token-based methods. It reads the entire line of input, including any spaces, up to the end-of-line character (the carriage return/newline character), and then advances the scanner past that line. A common issue arises when mixing next...() and nextLine(), as next...() methods do not consume the newline character, which can cause the subsequent nextLine() call to read an empty string. 
 
 3. Validation Methods
 These methods allow you to check the input type before attempting to read it, which helps in robust error handling and prevents exceptions. 
-Intellipaat
-Intellipaat
-hasNext(): Returns true if the scanner has another token in its input.
-hasNextInt(): Returns true if the next token can be interpreted as an int.
-hasNextLine(): Returns true if there is another line of input.
-hasNextDouble(): Returns true if the next token can be interpreted as a double, and so on for all data types. 
+
+- hasNext(): Returns true if the scanner has another token in its input.
+- hasNextInt(): Returns true if the next token can be interpreted as an int.
+- hasNextLine(): Returns true if there is another line of input.
+- hasNextDouble(): Returns true if the next token can be interpreted as a double, and so on for all data types. 
 
 Key Mechanism
 The core mechanism involves:
@@ -171,9 +176,6 @@ Reading bytes: The Scanner reads raw bytes from an underlying input source (like
 Decoding: It converts these bytes into characters using a default or specified character encoding.
 Tokenizing: It groups characters into tokens based on a delimiter pattern, which is whitespace by default but can be customized with useDelimiter().
 Parsing: The specific next...() methods then parse these tokens into the desired data types (e.g., converting the string "123" into an integer 123). 
-
-It is recommended to use the appropriate method for the expected input type and to close the Scanner instance using close() when finished to free system resources. 
-
 
 # Functional interfaces
 - Consumer:
