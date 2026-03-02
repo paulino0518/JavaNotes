@@ -173,3 +173,25 @@ Tokenizing: It groups characters into tokens based on a delimiter pattern, which
 Parsing: The specific next...() methods then parse these tokens into the desired data types (e.g., converting the string "123" into an integer 123). 
 
 It is recommended to use the appropriate method for the expected input type and to close the Scanner instance using close() when finished to free system resources. 
+
+
+# Functional interfaces
+- Consumer:
+  ```
+  import java.util.function.Consumer;
+  ```
+
+  Using it:
+  ```
+  public class ConsumerExample {
+    public static void main(String[] args) {
+
+    // Create a Consumer that prints a string to the console
+
+      Consumer<String> printConsumer = s -> System.out.println("Consumed value: " + s);
+
+    // Apply the Consumer's accept method
+      printConsumer.accept("Hello, World!"); // Output: Consumed value: Hello, World!
+    }
+}
+  ```
