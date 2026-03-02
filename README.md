@@ -195,3 +195,11 @@ It is recommended to use the appropriate method for the expected input type and 
     }
 }
   ```
+
+
+# Maps
+Maps are really cool, they a O(1) average search time for keys because it just runs a calculation.
+
+If you want immutable entries, and you want to have then inside before it runs.  Use
+
+.ofEntries();
