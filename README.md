@@ -179,12 +179,12 @@ Parsing: The specific next...() methods then parse these tokens into the desired
 
 # Functional interfaces
 - Consumer:
-  ```
+```
   import java.util.function.Consumer;
-  ```
+```
 
   Using it:
-  ```
+```
   public class ConsumerExample {
     public static void main(String[] args) {
 
@@ -197,7 +197,6 @@ Parsing: The specific next...() methods then parse these tokens into the desired
     }
 }
 ```
-
 
 # Maps
 Maps are really cool, they a O(1) average search time for keys because it just runs a calculation.
