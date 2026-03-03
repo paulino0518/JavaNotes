@@ -204,3 +204,13 @@ Maps are really cool, they a O(1) average search time for keys because it just r
 If you want immutable entries, and you want to have then inside before it runs.  Use
 
 .ofEntries();
+
+keys:
+- Keys have to be unique
+- Keys can map to only 1 value
+- It has 3 collection views
+
+- Collection views - allows the maps xontent to be seen as a set of keys, collection of values, or set lf key calue mappings. 
+
+Some implementations are ordered. some are not. HashMap is not. 
+
