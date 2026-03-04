@@ -57,23 +57,23 @@ Here is the main file
 
 ```
 //Java native interface
-**import java.io.*;**
+import java.io.*;
 
 //Driver class
 class Middleman {
-  **public native** void printHello();
+  public native void printHello();
 
   //Load the native library
   static{
-    **System.loadLibrary("hello");**
+    System.loadLibrary("hello");
   }
 
   //Main method
   public static void main(String[] args){
     System.out.println("In this program we will learn about java native");
     //Create an instance of Middleman and call the native method
-    **Middleman middleman = new Middleman();
-    middleman.printHello();**
+    Middleman middleman = new Middleman();
+    middleman.printHello();
   }
 }
 ```
